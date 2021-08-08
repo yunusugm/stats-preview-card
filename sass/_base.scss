@@ -1,0 +1,22 @@
+@use 'variable' as var;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: var.$regular-weight;
+  color: var.$bg-main;
+  line-height: 1.6;
+  padding: 2rem;
+  box-sizing: border-box;
+}
