@@ -10,3 +10,24 @@ $color-stat: hsla(0, 0%, 100%, 0.6);
 
 $bold-weight: 700;
 $regular-weight: 400;
+
+// ? RESPONSIVE
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 23.4375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+}
