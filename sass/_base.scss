@@ -15,7 +15,8 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-weight: var.$regular-weight;
-  color: var.$bg-main;
+  background-color: var.$bg-main;
+  color: var.$color-white;
   line-height: 1.6;
   padding: 2rem;
   box-sizing: border-box;
